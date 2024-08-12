@@ -3,7 +3,6 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    height: 69px;
     padding-left:32px;
     padding-right: 10px;
     border-radius: 15px;
@@ -26,7 +25,11 @@
     color: #4B6A9B;
     outline: none;
 }
-
+#button{
+    height: 69px;
+    display: flex;
+    align-items: center;
+}
 #searchBtn{
     border: none;
     font-size: 16px;
