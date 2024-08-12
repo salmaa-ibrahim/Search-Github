@@ -1,0 +1,40 @@
+#navbar{
+    display:  flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#navbar>a{
+    text-decoration: none;
+    color:#222731;
+    font-weight: bold;
+    font-size: 26px;
+}
+
+#mood{
+    display: flex;
+    column-gap: 16px;
+    align-items: center;
+}
+
+.moodState > button{
+    border: none;
+    background-color: transparent;
+    font-weight: bold;
+    font-size: 13px;
+    letter-spacing: 2.5px;
+    color: #697C9A;
+    cursor: pointer;
+}
+
+button:hover{
+    color: black;
+}
+
+
+/* @media only screen and (max-width:425px) {
+    #navbar{
+        width: 100%;
+    }
+    
+} */

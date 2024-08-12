@@ -1,0 +1,195 @@
+#content{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    row-gap: 32px;
+    height: 444px;
+    border-radius: 15px;
+    padding: 48px;
+    column-gap: 37px;
+    background-color: #FFFF;
+}
+
+.user{
+    display: flex;
+    flex-direction: column;
+    /* row-gap: 20px; */
+}
+
+
+.userTop{
+    display: flex;
+    column-gap: 37px;
+    align-items: center;
+}
+
+.userTop>img{
+    width: 100px;
+}
+
+.infoTop{
+    width: 480px;
+    display: flex;
+    column-gap: 138px;
+}
+
+.header{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-between;
+}
+
+.name{
+    font-weight: bold;
+    font-size: 26px;
+    color: #2B3442;
+}
+
+.userName{
+    font-size: 16px;
+    color: #0079FF;
+}
+
+.dateOfJoin{
+    font-size: 15px;
+    color: #697C9A;
+    padding-top: 11px;
+}
+
+.bio{
+    font-size: 15px;
+    color: #4B6A9B;
+    padding-left: 140px;
+}
+
+
+.userInfo{
+    display: flex;
+    flex-direction: column;
+    row-gap: 32px;
+    padding-left: 140px;
+}
+
+.infoBotom{
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+}
+
+.interaction{
+    background-color: #F6F8FF;
+    height: 85px;
+    display: flex;
+    align-items: center;
+    column-gap: 80px;
+    text-align: center;
+    border-radius: 10px;
+    padding: 17px;
+}
+
+.interaction-1 > label{
+    font-size: 13px;
+    color: #4B6A9B;
+}
+
+.interaction-1 > p{
+    font-size: 22px;
+    color: #2B3442;
+    font-weight: bold;
+}
+
+.contactInfo{
+    display: grid;
+    grid-template-columns: auto auto ;
+    column-gap: 62px;
+    row-gap: 17px;
+
+}
+
+.contactInfo-1{
+    display: flex;
+    align-items: center;
+    column-gap: 15px;
+}
+
+.contactInfo-1 >img{
+    cursor: pointer;
+}
+.contactInfo-1 >p{
+    font-size: 15px;
+    color:#4B6A9B
+}
+
+.contactInfo-1 >p:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+@media only screen and (max-width:425px) {
+    #content{
+        flex-direction: column;
+        height: auto;
+        padding: 24px;
+    }
+
+    .user{
+        row-gap: 33px;
+    }
+
+    .userImg{
+        display: flex;
+        column-gap: 19px;
+    }
+    .userImg> img{
+        height: 117px;
+        width: 117px;
+    }
+
+    .infoTop{
+        flex-direction: column;
+    }
+
+    .name{
+        font-size: 16px;
+    }
+
+    .userName ,.dateOfJoin, .bio{
+        font-size: 13px;
+    }
+
+    .bio{
+        padding-left: 0;
+    }
+
+    .userInfo{
+        padding-left: 0;
+    }
+
+    .interaction{
+        column-gap: 0;
+        justify-content: space-between;
+    }
+
+    .interaction-1 >label{
+        font-size: 11px;
+    }
+    .interaction-1 >p{
+        font-size: 14px;
+    }
+
+    .contactInfo{
+        grid-template-columns: auto ;
+    }
+
+    .contactInfo-1>p{
+        font-size: 13px;
+    }
+
+
+
+  
+   
+}
+
+
