@@ -247,13 +247,13 @@
         font-size: 13px;
     }
 
-    .lightBio{
+    .lightBio , .darkBio{
         padding-left: 0;
     }
 
-    .darktBio{
+    /* .darktBio{
         padding-left: 0;
-    }
+    } */
 
     .userInfo{
         padding-left: 0;
