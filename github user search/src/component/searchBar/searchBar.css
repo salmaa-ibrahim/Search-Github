@@ -67,13 +67,13 @@
 
 @media only screen and (max-width:425px) {
     .lightSearchBar{
-        padding-right:6px;
-        padding-left: 7px;
+        padding-right:7px;
+        padding-left: 16px;
     }
 
     .darkSearchBar{
-        padding-right:6px;
-        padding-left: 7px;
+        padding-right:7px;
+        padding-left: 16px;
     }
     #search{
         column-gap: 8px;
