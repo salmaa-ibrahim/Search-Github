@@ -12,18 +12,18 @@
 
 html{
   width: 100%;
-  height: 100%;
+  height:100%;
 }
 
 body{
   width: 100%;
-  height: 100%;
+  height:100%;
   /* background-color: #F2F2F2; */
 }
 
 #root{
   width: 100%;
-  height: 100%;
+  height:100%;
 }
 
 @media only screen and(max-width:425x) {

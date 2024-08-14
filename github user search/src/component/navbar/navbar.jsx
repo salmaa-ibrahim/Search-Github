@@ -19,7 +19,7 @@ function Navbar(){
     return(
         <div className={passevedValues.theme +"Navbar"}>
             <a href="#">devfinder</a>
-            <div id="mood">
+            <div className={passevedValues.theme +"Mood"}>
                 <div className={passevedValues.theme +"MoodState"} >
                     <input className='check' type="checkbox" onChange={onHandleChange} />
                     <button className={passevedValues.theme +"Dark"}>DARK</button>

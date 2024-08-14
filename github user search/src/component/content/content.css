@@ -2,10 +2,10 @@
     display: flex;
     flex-direction: column;
     /* justify-content: space-between; */
-    row-gap: 32px;
-    height: 444px;
+    row-gap: 30px;
+    height: 420px;
     border-radius: 15px;
-    padding: 48px;
+    padding: 35px;
     column-gap: 37px;
     background-color: #FFFF;
 }
@@ -14,10 +14,10 @@
     display: flex;
     flex-direction: column;
     /* justify-content: space-between; */
-    row-gap: 32px;
-    height: 444px;
+    row-gap: 30px;
+    height: 420px;
     border-radius: 15px;
-    padding: 48px;
+    padding: 35px;
     column-gap: 37px;
     background-color: #1E2A47;
 }
