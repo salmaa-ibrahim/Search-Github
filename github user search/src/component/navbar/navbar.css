@@ -30,7 +30,15 @@
     align-items: center;
 }
 
-.moodState{
+.lightMoodState{
+    position: relative;
+    width:40px ;
+    height:27px ;
+    display: flex;
+    align-items: center;
+}
+
+.darkMoodState{
     position: relative;
     width:40px ;
     height:27px ;
@@ -45,7 +53,7 @@
     opacity: 0;
 }
 
-.moodState > button{
+.lightMoodState > button{
     border: none;
     background-color: transparent;
     font-weight: bold;
@@ -55,10 +63,36 @@
     cursor: pointer;
 }
 
+
+
+.darkMoodState > button{
+    border: none;
+    background-color: transparent;
+    font-weight: bold;
+    font-size: 13px;
+    letter-spacing: 2.5px;
+    color: #697C9A;
+    cursor: pointer;
+}
 button:hover{
     color: black;
 }
 
+.darkDark{
+    display: none;
+}
+
+.lightLight{
+    display: none;
+}
+
+.darkmoon{
+    display: none;
+}
+
+.lightSun{
+    display: none;
+}
 
 
 /* @media only screen and (max-width:425px) {
