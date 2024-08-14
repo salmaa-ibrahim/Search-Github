@@ -1,4 +1,4 @@
-#content{
+.lightContent{
     display: flex;
     flex-direction: column;
     /* justify-content: space-between; */
@@ -8,6 +8,18 @@
     padding: 48px;
     column-gap: 37px;
     background-color: #FFFF;
+}
+
+.darkContent{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    row-gap: 32px;
+    height: 444px;
+    border-radius: 15px;
+    padding: 48px;
+    column-gap: 37px;
+    background-color: #1E2A47;
 }
 
 .user{
@@ -25,6 +37,7 @@
 
 .userTop>img{
     width: 100px;
+    border-radius: 50%;
 }
 
 .infoTop{
@@ -40,10 +53,16 @@
     justify-content: space-between;
 }
 
-.name{
+.lightName{
     font-weight: bold;
     font-size: 26px;
     color: #2B3442;
+}
+
+.darkName{
+    font-weight: bold;
+    font-size: 26px;
+    color: #FFFFFF;
 }
 
 .userName{
@@ -51,15 +70,27 @@
     color: #0079FF;
 }
 
-.dateOfJoin{
+.lightDateOfJoin{
     font-size: 15px;
     color: #697C9A;
     padding-top: 11px;
 }
 
-.bio{
+.darkDateOfJoin{
+    font-size: 15px;
+    color: #FFFFFF;
+    padding-top: 11px;
+}
+
+.lightBio{
     font-size: 15px;
     color: #4B6A9B;
+    padding-left: 140px;
+}
+
+.darkBio{
+    font-size: 15px;
+    color: #98a6bd;
     padding-left: 140px;
 }
 
@@ -77,7 +108,7 @@
     row-gap: 40px;
 }
 
-.interaction{
+.lightInteraction{
     background-color: #F6F8FF;
     height: 85px;
     display: flex;
@@ -88,15 +119,50 @@
     padding: 17px;
 }
 
-.interaction-1 > label{
+.darkInteraction{
+    background-color: #141D2F;
+    height: 85px;
+    display: flex;
+    align-items: center;
+    column-gap: 80px;
+    text-align: center;
+    border-radius: 10px;
+    padding: 17px;
+}
+
+/* .interaction-1 > label{
+    font-size: 13px;
+    color: #4B6A9B;
+} */
+
+.lightLable{
     font-size: 13px;
     color: #4B6A9B;
 }
 
-.interaction-1 > p{
+.darkLable{
+    font-size: 13px;
+    color: #FFFFFF;
+    
+}
+
+/* .interaction-1 > p{
     font-size: 22px;
     color: #2B3442;
     font-weight: bold;
+} */
+
+.lightP{
+    font-size: 22px;
+    color: #2B3442;
+    font-weight: bold;
+}
+
+.darkP{
+    font-size: 22px;
+    color: #FFFFFF;
+    font-weight: bold;
+    letter-spacing: 2px;
 }
 
 .contactInfo{
@@ -116,9 +182,19 @@
 .contactInfo-1 >img{
     cursor: pointer;
 }
-.contactInfo-1 >p{
+/* .contactInfo-1 >p{
     font-size: 15px;
     color:#4B6A9B
+} */
+
+.lightInfo{
+    font-size: 15px;
+    color:#4B6A9B
+}
+
+.darkInfo{
+    font-size: 15px;
+    color:#FFFFFF
 }
 
 .contactInfo-1 >p:hover{
@@ -127,12 +203,17 @@
 }
 
 @media only screen and (max-width:425px) {
-    #content{
+    .lightContent{
         flex-direction: column;
         height: auto;
         padding: 24px;
     }
 
+    .darkContent{
+        flex-direction: column;
+        height: auto;
+        padding: 24px;
+    }
     .user{
         row-gap: 33px;
     }
@@ -150,15 +231,27 @@
         flex-direction: column;
     }
 
-    .name{
+    .lightName{
         font-size: 16px;
     }
 
-    .userName ,.dateOfJoin, .bio{
+    .darkName{
+        font-size: 16px;
+    }
+
+    .userName ,.lightDateOfJoin, .lightBio{
         font-size: 13px;
     }
 
-    .bio{
+    .darkDateOfJoin, .darkBio{
+        font-size: 13px;
+    }
+
+    .lightBio{
+        padding-left: 0;
+    }
+
+    .darktBio{
         padding-left: 0;
     }
 
@@ -166,15 +259,36 @@
         padding-left: 0;
     }
 
-    .interaction{
+    .lightInteraction{
         column-gap: 0;
         justify-content: space-between;
     }
 
-    .interaction-1 >label{
+    .darkInteraction{
+        column-gap: 0;
+        justify-content: space-between;
+    }
+
+    /* .interaction-1 >label{
+        font-size: 11px;
+    } */
+    /* .interaction-1 >p{
+        font-size: 14px;
+    } */
+
+    .lightLable{
         font-size: 11px;
     }
-    .interaction-1 >p{
+
+    .darkLable{
+        font-size: 11px;
+    }
+
+    .lightP{
+        font-size: 14px;
+    }
+
+    .darkP{
         font-size: 14px;
     }
 
@@ -182,7 +296,15 @@
         grid-template-columns: auto ;
     }
 
-    .contactInfo-1>p{
+    /* .contactInfo-1>p{
+        font-size: 13px;
+    } */
+
+    .lightInfo{
+        font-size: 13px;
+    }
+
+    .darkInfo{
         font-size: 13px;
     }
 

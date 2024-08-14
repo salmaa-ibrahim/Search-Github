@@ -5,23 +5,26 @@ import urlIcon from '/images/002-url.svg'
 import twitterIcon from '/images/004-twitter.svg'
 import buldingIcon from '/images/001-office-building.svg'
 
+import { ThemeContext } from '../mainApp/mainApp';
+import { useContext } from "react";
 function Content(){
+    const passevedValues = useContext(ThemeContext)
     return(
-        <div id="content">
+        <div className={passevedValues.theme +"Content"}>
             <div className="user">
                 <div className="userTop">
                     <img src={userImg} alt="" />
                     <div className="infoTop">
                             <div className='header'>
-                                <p className='name'>The Octocat </p>
+                                <p className={passevedValues.theme +"Name"}>The Octocat </p>
                                 <a href="#" className='userName'>@octocat</a>
                             </div>
-                            <p className='dateOfJoin'>Joined 25 Jan 2011</p>
+                            <p className={passevedValues.theme +"DateOfJoin"}>Joined 25 Jan 2011</p>
                     </div>
                 </div>
 
                 <div className='Bio'>
-                    <p className='bio'>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros.</p>
+                    <p className={passevedValues.theme +"Bio"}>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros.</p>
                 </div>
             </div>
 
@@ -29,37 +32,37 @@ function Content(){
 
             <div className="userInfo">
                 <div className="infoBotom">
-                    <div className="interaction">
+                    <div className={passevedValues.theme +"Interaction"}>
                         <div className="interaction-1">
-                            <label>Repos</label>
-                            <p>8</p>
+                            <label className={passevedValues.theme +"Lable"}>Repos</label>
+                            <p className={passevedValues.theme +"P"}>8</p>
                         </div>
                         <div className="interaction-1">
-                            <label>Followers</label>
-                            <p>3938</p>
+                            <label  className={passevedValues.theme +"Lable"}>Followers</label>
+                            <p className={passevedValues.theme +"P"}>3938</p>
                         </div>
                         <div className="interaction-1">
-                            <label>Following</label>
-                            <p>9</p>
+                            <label  className={passevedValues.theme +"Lable"}>Following</label>
+                            <p  className={passevedValues.theme +"P"}>9</p>
                         </div>
                     </div>
 
                     <div className="contactInfo">
                         <div className="contactInfo-1">
                             <img src={locationIcon} alt="" />
-                            <p>San Francisco</p>
+                            <p className={passevedValues.theme +"Info"}>San Francisco</p>
                         </div>
                         <div className="contactInfo-1">
                             <img src={twitterIcon} alt="" />
-                            <p>Not Available</p>
+                            <p className={passevedValues.theme +"Info"}>Not Available</p>
                         </div>
                         <div className="contactInfo-1">
                             <img src={urlIcon} alt="" />
-                            <p>https://github.blog</p>
+                            <p className={passevedValues.theme +"Info"}>https://github.blog</p>
                         </div>
                         <div className="contactInfo-1">
                             <img src={buldingIcon} alt="" />
-                            <p>@github</p>
+                            <p className={passevedValues.theme +"Info"}>@github</p>
                         </div>
                     </div>
                 </div>

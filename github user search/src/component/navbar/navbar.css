@@ -17,6 +17,21 @@
     align-items: center;
 }
 
+.moodState{
+    position: relative;
+    width:40px ;
+    height:27px ;
+    display: flex;
+    align-items: center;
+}
+.check{
+    position: absolute;
+    cursor: pointer;
+    top: 5px;
+    width: 40px;
+    opacity: 0;
+}
+
 .moodState > button{
     border: none;
     background-color: transparent;
@@ -30,6 +45,7 @@
 button:hover{
     color: black;
 }
+
 
 
 /* @media only screen and (max-width:425px) {
