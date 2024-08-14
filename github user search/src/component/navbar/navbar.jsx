@@ -1,7 +1,7 @@
+import { ThemeContext } from '../../App';
 import './navbar.css'
 import darkImg from '/images/Path.svg'
 
-import { ThemeContext } from '../mainApp/mainApp';
 import { useContext } from "react";
 
 function Navbar(){
@@ -15,8 +15,9 @@ function Navbar(){
         }
         theme.setTheme(newValue)
     }
+    const passevedValues = useContext(ThemeContext)
     return(
-        <div id='navbar'>
+        <div className={passevedValues.theme +"Navbar"}>
             <a href="#">devfinder</a>
             <div id="mood">
                 <div className="moodState" >

@@ -1,16 +1,29 @@
-#navbar{
+.lightNavbar{
     display:  flex;
     align-items: center;
     justify-content: space-between;
 }
 
-#navbar>a{
+.darkNavbar{
+    display:  flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.lightNavbar>a{
     text-decoration: none;
     color:#222731;
     font-weight: bold;
     font-size: 26px;
 }
 
+
+.darkNavbar>a{
+    text-decoration: none;
+    color:#FFF;
+    font-weight: bold;
+    font-size: 26px;
+}
 #mood{
     display: flex;
     column-gap: 16px;

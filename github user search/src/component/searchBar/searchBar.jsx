@@ -1,7 +1,7 @@
 import './searchBar.css'
-import { ThemeContext } from '../mainApp/mainApp';
 import { useContext } from "react";
 import searcIcon from "/images/Shape 2.svg"
+import { ThemeContext } from '../../App';
 function SearchBar(){
     const passevedValues = useContext(ThemeContext)
     console.log(passevedValues.theme)

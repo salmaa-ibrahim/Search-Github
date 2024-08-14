@@ -5,8 +5,8 @@ import urlIcon from '/images/002-url.svg'
 import twitterIcon from '/images/004-twitter.svg'
 import buldingIcon from '/images/001-office-building.svg'
 
-import { ThemeContext } from '../mainApp/mainApp';
 import { useContext } from "react";
+import { ThemeContext } from '../../App'
 function Content(){
     const passevedValues = useContext(ThemeContext)
     return(
